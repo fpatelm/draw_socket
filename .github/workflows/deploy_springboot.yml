@@ -32,4 +32,5 @@ jobs:
           EOF
     - run: heroku login
     - run: heroku git:remote -a draw-backend
+    - run: git fetch --all --unshallow   
     - run: git push heroku master
