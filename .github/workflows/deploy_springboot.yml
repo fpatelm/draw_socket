@@ -32,4 +32,4 @@ jobs:
           EOF
     - run: heroku login
     - run: heroku git:remote -a draw-backend
-    - run: git push heroku master
+    - run: git push heroku master --force
