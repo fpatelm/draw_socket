@@ -32,9 +32,4 @@ jobs:
           EOF
     - run: heroku login
     - run: heroku git:remote -a draw-backend
-    - run: git fetch
-    - run: git fetch --unshallow https://git.heroku.com/draw-backend.git 
-    - run: git push master --force
-    #- run: git fetch
-    #- run: git fetch --unshallow https://git.heroku.com/draw-backend.git 
-    #- run: git push --force https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/draw-backend.git
+    - run: git push heroku master
