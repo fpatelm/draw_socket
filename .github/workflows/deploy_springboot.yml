@@ -32,6 +32,4 @@ jobs:
           EOF
     - run: heroku login
     - run: heroku git:remote -a draw-backend
-    - run: git remote add origin https://github.com/fpatelm/draw_socket
-    - run: git fetch --all --unshallow   
-    - run: git push heroku master -f
+    - run: git push -f heroku master
