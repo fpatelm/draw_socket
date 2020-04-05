@@ -30,6 +30,6 @@ class GreetingController {
         val responseHeaders = HttpHeaders()
         responseHeaders["Access-Control-Allow-Origin"] = "*"
         return ResponseEntity.ok().headers(responseHeaders)
-                .body(Title("App Title example Faizal"))
+                .body(Title("App Title example Faizal Patel"))
     }
 }
